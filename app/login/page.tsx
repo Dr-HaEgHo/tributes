@@ -28,7 +28,7 @@ export default function Home() {
 
 
     const submitHandler = (e: React.FormEvent<HTMLButtonElement>) => {
-        router.push('/onboarding')
+        router.push('/dashboard/onboarding')
         // dispatch(authenticateAdminUser({
         //     email: email,
         //     password: password
