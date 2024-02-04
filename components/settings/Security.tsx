@@ -42,10 +42,10 @@ const Security = () => {
                       />
                     
                       <button className='buttons' >
-                          <p className='text-[13px] 2xl:text-[15px]'>Update Profile</p>
+                          <p className='text-[13px] 2xl:text-[15px]'>Update Password</p>
                       </button>
                       <button className='buttons-2 !bg-blueGray' >
-                          <p className='text-[13px] 2xl:text-[15px] text-primary'>Update Profile</p>
+                          <p className='text-[13px] 2xl:text-[15px] text-primary'>Reset Password</p>
                       </button>
                   </form>
               </div>
