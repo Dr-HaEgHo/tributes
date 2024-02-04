@@ -48,7 +48,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
                                 /> 
                             </button>
                             <form className='w-full relative' >
-                                <input type="text" placeholder='Type your text here...' className='w-full rounded-full bg-chatinput p-[12px] text-[12px] text-chatinputtext focus:outline-none focus:border-2 border-primary2' />
+                                <input type="text" placeholder='Type your text here...' className='w-full rounded-full bg-chatinput border-2 border-chatinput p-[12px] text-[12px] text-chatinputtext focus:outline-none focus:border-2 focus:border-primary2' />
                                 <button type='submit' onClick={handleSubmit} className='w-[30px] h-[30px] p-1 rounded-full 2xl:w-[30px] 2xl:h-[30px] absolute right-[30px] top-1/2 transform -translate-y-1/2 hover:bg-sidebarTxtHover active:bg-blueChatHighlightActive '>
                                     <Image
                                         src={require('../../../assets/icons/send.png')}

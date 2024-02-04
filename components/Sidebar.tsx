@@ -131,14 +131,14 @@ const Sidebar = () => {
                     {/* SYSTEM LINKS */}
 
 
-                    <div className="w-full flex flex-col items-start gap-2 py-3">
+                    {/* <div className="w-full flex flex-col items-start gap-2 py-3">
                         <div onClick={() => {
                             setLogoutOpen((prev: boolean) => prev = true)
                         }} className={`w-full cursor-pointer transition duration-200 p-2 flex border-primary1 items-center gap-4 hover:bg-sidebarTxtHover active:bg-sidebarTxtActive`} >
                             <Logout color="#D92C20" />
                             <p className={`text-xs 2xl:text-sm font-normal text-error`} >Logout</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
 
