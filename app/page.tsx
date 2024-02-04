@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 
-const titles = ['Stocks', 'Trends', 'News', 'Analysis', 'Speculation']
+const titles = ['Stocks', 'Trends', 'News', 'Analysis', 'Speculation'];
 
 export default function Home() {
 
@@ -12,7 +12,6 @@ export default function Home() {
   const [count, setCount]: [count: number, setCount: Function] = useState(0);
 
   const router = useRouter();
-
 
   useEffect(() => {
     const intervalId = setInterval(() => {

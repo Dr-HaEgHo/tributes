@@ -22,6 +22,9 @@ const config: Config = {
         primaryTrans10: "rgba(82, 255, 134, 0.1)",
         head: "#333",
         appOrange: "#FF4F00",
+        blueChatHighlight: "#E9F3FF",
+        blueChatHighlightHover: "#F5FAFF",
+        blueChatHighlightActive: "#E9F3FF",
 
         appBlack:"#212121",
 
@@ -48,20 +51,32 @@ const config: Config = {
         greytxt: "#9E9E9E",
         userEmail: "#7076AB",
         headDesc: "#1A1A1A",
-
+        
         // GRAYS
         inputLogin: "#F7F9FB",
         border: "#F0F0F0",
         onPanelGray: "#F4F4F4",
         blueGray: "#C8E1FF",
-        dividerGray:"#F1F1F1",
+        dividerGray: "#F1F1F1",
+        profileDividerGray: "#E4E4E4",
 
+        // INPUTS
+        inputBg: "#F6F6F6",
+        inputBorder :"#EEEEEE",
+        
         // Progress
         progressTrack: "#DDDDDD",
         progress:"#2A66AE",
         
         progressTrack2: "#F4F4F4",
         progress2:"#85E364",
+        
+        
+        // CHAT BOXES
+        nameTag: "#A6A6A6",
+        outbox: "#BEF6FE",
+        chatinput: "#F7F7F7",
+        chatinputtext: "#BEBEBE",
         
 
 

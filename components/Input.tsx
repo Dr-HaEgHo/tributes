@@ -1,5 +1,5 @@
 'use client'
-import { dropDownProps, emailInputProps, pwInputProps, searchInputProps } from '@/types/types'
+import { dropDownProps, emailInputProps, emailInputPropsFade, pwInputProps, searchInputProps } from '@/types/types'
 import { ArrowDown2, ArrowUp2, Eye, EyeSlash } from 'iconsax-react';
 import Image from 'next/image';
 import React, { FC, useReducer, useRef, useState } from 'react'
@@ -20,11 +20,11 @@ const Input: FC<emailInputProps> = (props) => {
 export default Input;
 
 
-export const InputFade: FC<emailInputProps> = (props) => {
+export const InputFade: FC<emailInputPropsFade> = (props) => {
     return (
         <div className='input-wrap' >
-            <label className='labels'>{props.label && props.label}</label>
-            <input type={props?.type} className='inputsfade' placeholder={props.placeholder && props.placeholder} />
+            <label className='labelsFade'>{props.label && props.label}</label>
+            <input type={props?.type} disabled={props?.isDisabled} className='inputsfade' placeholder={props.placeholder && props.placeholder} />
         </div>
     )
 }

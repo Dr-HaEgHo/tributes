@@ -6,15 +6,17 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 const latest = [
-    { id: 1, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 0, instructor: "Kore Ayobami"},
-    { id: 2, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 0, instructor: "Kore Ayobami"},
-    { id: 3, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 0, instructor: "Kore Ayobami"},
+    { id: 1, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 0, instructor: "Kore Ayobami" },
+    { id: 2, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 0, instructor: "Kore Ayobami" },
+    { id: 3, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 0, instructor: "Kore Ayobami" },
+    // { id: 4, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 0, instructor: "Kore Ayobami" },
 ]
 
 const ongoing = [
-    { id: 1, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 4, instructor: "Kore Chiefdrummer"},
-    { id: 2, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 10, instructor: "Kore Chiefdrummer"},
-    { id: 3, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 12, instructor: "Kore Chiefdrummer"},
+    { id: 1, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 4, instructor: "Kore Chiefdrummer" },
+    { id: 2, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 10, instructor: "Kore Chiefdrummer" },
+    { id: 3, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 12, instructor: "Kore Chiefdrummer" },
+    // { id: 4, title: "The Fundamentals of FX trading - Beginner to Advanced", total: 20, completed: 12, instructor: "Kore Chiefdrummer" },
 ]
 
 const page = () => {
@@ -64,20 +66,20 @@ const page = () => {
                         <Link href='/' ><p className='text-[13px] 2xl:text-[15px] underline' >Show All</p></Link>
                     </div>
 
-                    
+
 
                     {/* COURSES MAPPED OUT */}
-                    <div className='w-full flex items-start gap-[18px] 2xl:gap-[24px] flex-nowrap' >
+                    <div className='flex gap-[18px] 2xl:gap-[24px] justify-between' >
                         {
                             latest && latest.map((item) => (
                                 <div className='w-[33%]' >
-                                    <LatestCard data={ item } />
+                                    <LatestCard data={item} />
                                 </div>
                             ))
                         }
                     </div>
 
-                    
+
                     {/* DIVIDER DIV  */}
                     <div className='w-full py-[16px] 2xl:py-[30px] flex items-center gap-[12px]'>
                         <h3 className=' text-[17px] 2xl:text-[20px]' >Ongoing Courses</h3>

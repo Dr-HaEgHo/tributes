@@ -29,11 +29,11 @@ const OngoingCard = ({ data }: { data: any }) => {
             </div>
 
             {/* WHITE AREA WITH CONTENT */}
-            <div className='w-full h-[50%] bg-white z-10 pt-[8px] px-[16px] 2xl:py-[20px] flex flex-col gap-4' >
+            <div className='w-full h-[50%] bg-white z-10 pt-[8px] px-[16px] 2xl:py-[20px] flex flex-col gap-3' >
 
                 {/* TITLE AND NAME OF INSTRUCTOR */}
                 <div className='' >
-                    <h3 className='text-[14px] 2xl:text-[15px] text-black' >{data?.title}</h3>
+                    <h3 className='text-[14px] 2xl:text-[16px] text-black' >{data?.title}</h3>
                     <p className='text-greytxt text-[10px] 2xl:text-xs font-[100]' >{data?.instructor}</p>
                 </div>
 

@@ -1,7 +1,7 @@
 'use client'
 import ImageSlider from '@/components/ImageSlider'
 import Input, { InputFade, PasswordInput, PasswordInputFade } from '@/components/Input'
-import Loader from '@/components/Loader'
+import Loader from '@/components/CardLoader'
 // import { authenticateAdminUser } from '@/store/auth/authActions'
 // import { useAppDispatch, useAppSelector } from '@/store/hooks'
 import Image from 'next/image'

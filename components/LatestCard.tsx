@@ -3,7 +3,7 @@ import React from 'react'
 
 const LatestCard = ({ data }: {data:any}) => {
   return (
-      <div className='w-full aspect-[1.4] rounded-xl relative flex flex-col justify-between overflow-hidden shadow' >
+      <div className='w-full aspect-[1.4] rounded-xl 2xl:rounded-3xl relative flex flex-col justify-between overflow-hidden shadow' >
           
 
           {/* IMAGE IN THE BACKGROUND */}
@@ -29,7 +29,7 @@ const LatestCard = ({ data }: {data:any}) => {
           </div>
 
           {/* WHITE AREA WITH CONTENT */}
-          <div className='w-full h-[50%] bg-white z-10 pt-[8px] px-[16px] 2xl:py-[20px] flex flex-col gap-2' >
+          <div className='w-full h-[50%] 2xl:h-[50%] bg-white z-10 pt-[8px] px-[16px] 2xl:py-[20px] flex flex-col gap-2' >
               
               {/* TITLE AND NAME OF INSTRUCTOR */}
               <div className='' >

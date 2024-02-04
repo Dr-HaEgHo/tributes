@@ -6,6 +6,14 @@ export interface emailInputProps {
     setValue: Function,
 }
 
+export interface emailInputPropsFade {
+    label: string,
+    placeholder: string,
+    type: string,
+    setValue: Function,
+    isDisabled: boolean
+}
+
 export interface searchInputProps {
     placeholder: string,
     type: string,
