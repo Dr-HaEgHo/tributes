@@ -28,7 +28,7 @@ export default function Home() {
 
 
     const submitHandler = (e: React.FormEvent<HTMLButtonElement>) => {
-        router.push('/dashboard')
+        router.push('/onboarding')
         // dispatch(authenticateAdminUser({
         //     email: email,
         //     password: password
@@ -110,7 +110,7 @@ export default function Home() {
                         <h2 className='text-[26px] 2xl:text-[32px] font-bold text-appBlack text-center' >Welcome Back!</h2>
                         <p className='text-xs 2xl:text-sm mb-[52px] 2xl:mb-[72px] font-normal text-input text-center' >Enter your details to login</p>
                         <form className='flex flex-col gap-4 2xl:gap-8' >
-                            <InputFade setValue={setEmail} label="Email" type='email' placeholder='Please enter your email' />
+                            <InputFade setValue={setEmail} isDisabled={false} label="Email" type='email' placeholder='Please enter your email' />
                             <div className='mb-[40px]' >
                                 <PasswordInputFade setValue={setPassword} label="Password" placeholder='Please enter your email' />
                                 <p className='text-xs text-right mt-2 2xl:text-sm text-greentxt cursor-pointer hover:underline '>Forgot Password?</p>
