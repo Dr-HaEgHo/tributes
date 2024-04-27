@@ -1,32 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -60,17 +32,25 @@ body {
   background: url(../assets/images//login.png);
   background-size: cover;
 } */
-
+/* 
 .inputs:-webkit-autofill,
 .inputs:-webkit-autofill:hover,
 .inputs:-webkit-autofill:focus,
 .inputs:-webkit-autofill:active {
   background: none !important;
+} */
+
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
 
 .container {
   @apply w-[90%] mx-auto
+}
+
+.l-container {
+  @apply w-[90%] mx-auto max-w-[1200px]
 }
 
 .dash-container {
@@ -79,6 +59,22 @@ body {
 
 .input-wrap {
   @apply w-full flex flex-col items-start gap-2 relative
+}
+
+.content{
+  @apply text-base font-normal
+}
+
+.content-header{
+  @apply text-[15px] font-semibold
+}
+
+.content-small{
+  @apply text-sm font-normal leading-relaxed
+}
+
+.author{
+  @apply text-center mt-4 font-light leading-relaxed
 }
 
 .labels {
@@ -105,8 +101,16 @@ body {
   @apply w-full bg-primary text-white p-[10px] rounded mt-[1rem] disabled:bg-someGray
 }
 
+.buttons-line {
+  @apply bg-none border-primary border text-primary p-[10px] rounded disabled:border-someGray
+}
+
 .buttons-2 {
   @apply bg-primary text-white p-[10px] rounded mt-[0rem] disabled:bg-someGray
+}
+
+.buttons-2-inv {
+  @apply bg-white text-primary2 p-[10px] rounded mt-[0rem] disabled:bg-someGray
 }
 
 .hovers {
@@ -132,7 +136,6 @@ body {
   
 }
 
-
 .scroll {
   overflow-y: scroll;
 }
@@ -147,7 +150,7 @@ body {
 }
 
 .scroll-chat::-webkit-scrollbar {
-  width: 8px
+  width: 8px;
 }
 
 .scroll-chat::-webkit-scrollbar-thumb {
@@ -155,6 +158,10 @@ body {
   border-radius: 9999px;
 }
 
+.pacifico-regular {
+  font-family: "Pacifico";
+  font-weight: 400;
+}
 
 
 .scroll-2 {
@@ -252,8 +259,7 @@ body {
 }
 
 .spinning-logo {
-  width: 100%;
-  animation: logo-spin 6s linear infinite;
+  animation: logo-spin 3s linear infinite;
 }
 
 .next-video-container {
@@ -269,6 +275,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+}
+
+.fade{
+  animation: fade-in .4s ease-in-out;
+}
+
+.blur{
+  background-blend-mode: lighten;
 }
 
 @media(min-width: 1500px) {
@@ -301,11 +315,11 @@ body {
 
 @keyframes logo-spin {
   from {
-    transform: rotateZ(0deg);
+    transform: rotateY(0deg);
   }
 
   to {
-    transform: rotateZ(359deg);
+    transform: rotateY(359deg);
   }
 }
 
@@ -329,4 +343,128 @@ body {
     transform: transLateY(0px);
     opacity: 1
   }
+}
+
+@keyframes fade-in{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1
+  }
+}
+
+
+
+
+
+
+/* ============================================================================== FONTS */
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }

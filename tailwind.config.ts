@@ -15,8 +15,12 @@ const config: Config = {
       },
       colors: {
         primary: "#2A66AE",
+        primarytxt: "#3667A3",
+        primaryLight:"#D3E7FF",
+        orangeLight: "#FFF0EA", 
         primary2: "#161C51",
-        primary10: "rgba(0, 105, 43, 0.1)",
+        primary10: "#161C5111",
+        // primary10: "rgba(0, 105, 43, 0.1)",
         primary1: "yellow-300",
         primary5: "rgba(25, 245, 111, 0.05)",
         primaryTrans10: "rgba(82, 255, 134, 0.1)",
@@ -30,7 +34,6 @@ const config: Config = {
 
         chartBlue: "#596AFF",
         chartGreen: "#36BB2A",
-
 
         farmerbox: "rgba(253, 240, 176, 0.6)",
         buyerbox: "#D7FFE9",
@@ -85,10 +88,12 @@ const config: Config = {
         
         // ACTIVE STYLES
         whiteActive:"rgb(255, 255, 255, 0.15)",
+        whiteLoading: "rgb(255, 255, 255, 0.4)",
 
 
 
         filterGray: "#787676",
+        labelGrey: "#787878",
         someGray: "#73777F",
         someDarkGray: "#201919",
         sidebarEdge: "#697586",
@@ -107,11 +112,13 @@ const config: Config = {
         tableGray: "rgba(227, 232, 239, 1)",
         someBorderGray: "#EAEAEA",
         someOtherGrayBorder: "#F8F8F8",
+        smallHeadTxtGray: "#E0E0E0",
 
 
         "80%": "#5c5c5c",
         blackTrans80: "rgba(0, 0, 0, 0.8)",
         blackTrans10: "rgba(0, 0, 0, 0.1)",
+        blackTrans20: "rgba(0, 0, 0, 0.2)",
         shadow: "rgba(0, 0, 0, 0.15)",
         icons: "#A3ACB9",
         border2: "#DBDBDB",
@@ -136,6 +143,9 @@ const config: Config = {
 
 
       },
+      fontFamily: {
+        paci: 'Pacifico'
+      }
     },
   },
   plugins: [],
